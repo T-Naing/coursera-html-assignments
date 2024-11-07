@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body{
+ font-size: 16px;
+ color:#fff;
+ background-color: #61122f; /*maroon*/
+}
+#main-content {
+  padding: 0px;
+  margin: 0px; 
+}
+/** HEADER **/
+#header-nav{
+  background-color: #f6b319; /*yellow*/
+  border-radius: 0;
+  border:0;
+}
+.navbar-brand {
+/*  padding-top:25px;*/
+/*  padding-bottom: 25px;*/
+/*  margin-bottom: 25px;*/
+}
+.navbar {
+/*  height: 80px;*/
+}
+.navbar-brand h1 { /*Food, LLC*/
+  color: #556c3e; /*Greeen*/
+  font-size: 3rem;
+/*  font-size: 1.5em;*/
+text-transform: uppercase;
+font-weight: bold;
+text-shadow: 1px 1px 1px #222;
+margin-top: 0;
+margin-bottom: 0;
+line-height: .75;
+}
+/*.navbar-brand a:hover, .navbar-brand a:focus { /*remove the underline
+  text-decoration: none; 
+}*/
+#nav-list { 
+  margin-top:10px;
+}
+#nav-list a {
+  color:#951C49; /*text color red*/
+  text-align: center;
+  font-size: 1.2em;
+}
+#nav-list a:hover {
+  background:#E7E7E7;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f /*maroon*/
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+/*  margin-top: 20px;*/
+/*margin-bottom: 20px;*/
+}
+.navbar-header button {
+/*  padding: 0px 0px 20px 0px;*/
+}
+/* END HEADER */
+#menu-categories-title {
+/* margin-top: 0px; */
+}
+.row {
+/*width: 100%;*/
+margin: 0px 15px 0px 15px;
+}
+.row>div {
+/*  border: 2px solid blue;*/
+/*  background-color: peru;*/
+margin-bottom: 15px;
+padding: 0px;
+/*  width: 90%;
+  margin-right: auto;
+  margin-left: auto;*/  
+}
+#chicken-content, #beef-content, #sushi-content{
+  border: 2px solid darkgray;
+  background-color: peru;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px 0px 15px;
+/*  margin-bottom: 5px;*/
+}
+.row div h3 {
+  float: right;
+}
+.row div p {
+  clear: both;
+}
+.row div span{
+  font-size: 1.2em;
+  text-align: right;
+  float: right;
+}
+#empty-div {
+  clear: both;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row div {
+/*  clear: both;*/
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  /*.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }*/
+  .navbar-brand h1 { /* Restaurant name */
+/*    padding-top: 10px;*/
+font-size: 5vw;  /*1vw = 1% of viewport width*/ 
+}
+}
